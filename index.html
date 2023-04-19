@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Cards</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <style>
+        .card-img-overlay {
+            background-color: rgba(0,0,0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!--Carousel - start -->
+        <h1>Blog PHP - Bem vindo!!!</h1>
+        <div id="carousel-exemplo" class="carousel carousel-fade slide " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./imagens/mountains-190055_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto-1</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/river-219972_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto-2</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/tree-736885_1280.jpg"/>
+                    <div class="carousel-caption">
+                        <h2>Foto-3</h2>
+                    </div>
+                </div>                       
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+        <!-- Carousel -end-->
+        <!-- Grid - Start -->
+        <h2><br>Últimas notícias</h2>
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <article class="card">
+                    <header class="card-header">
+                        Tecnologia
+                    </header>
+                    <img src="https://img.freepik.com/fotos-gratis/homem-tiro-medio-usando-oculos-vr_23-2149126949.jpg?w=1380&t=st=1681755795~exp=1681756395~hmac=07fc877e90921d01c4b50d9c7c6e863e3fe4d704ebc8905830282aacf48929c5" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Inteligência Artificial</h4>
+                        <p class="card-text">
+                            ChatGPT vai acabar com divervos empregos?
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </article>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <img src="https://i.pinimg.com/736x/a9/1c/05/a91c05fd69e22b4ee8e87859e1368137.jpg" alt="">
+                    <div class="card-img-overlay">
+                        <h4 class="card-title">Nos cinemas</h4>
+                        <h5 class="card-subtitle">Batman - O cara!!!</h5>
+                        <p class="card-text">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat vero officiis sit quia blanditiis aspernatur quasi debitis voluptates doloremque quis neque similique, ab accusantium, laborum, tempore deleniti reprehenderit nam consequuntur?
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card text-bg-dark">
+                    <div class="card-header">
+                        Economia
+                    </div>
+                    <img src="https://media.istockphoto.com/id/1034363382/pt/foto/coins-of-various-cryptocurrencies.jpg?s=612x612&w=0&k=20&c=fZvWtn3tCCAB_o-xpqDPWDxjHjWZpUJZ3Q-a9u7v26g=" alt="">
+                    <div class="card-body">
+                        <h4 class="card-title">Criptomoedas</h4>
+                        <h5 class="card-subtitle">Declaração de IR </h5>
+                        <p class="card-text">
+                            Como devemos informar ao leão nossas criptomoedas!
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
